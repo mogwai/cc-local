@@ -1,0 +1,7 @@
+#!/bin/bash
+# Run Claude Code against local Ollama
+
+ANTHROPIC_BASE_URL=http://localhost:11434 \
+ANTHROPIC_AUTH_TOKEN=ollama \
+ANTHROPIC_API_KEY="" \
+claude --model qwen3.5:9b "$@"
